@@ -1,7 +1,9 @@
 # project-marking-problem
 A toy POSIX threading problem written in C in which S students have a project which must be marked by K markers and M markers must mark up to N projects.
 
-Solved because:
+Report 
+
+1. Solved because:
 
 The threads were synchronized using mutual exclusion and condition variables. The solution uses a single shared mutex for operations involving the availability list this ensures that only one thread is able to add or remove from the list at a time because threads without the lock will wait if another thread holds the lock. This is crucial because without this measure two students may check the number of markers simultaneously when there is only just enough markers for one to proceed resulting in error.
 
