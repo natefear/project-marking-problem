@@ -1,6 +1,10 @@
 # project-marking-problem
 A toy POSIX threading problem written in C in which S students have a project which must be marked by K markers and M markers must mark up to N projects.
 
+To use:
+- Run the make command.
+- Run the compiled demo.c specifying the number of students, number of markers, number of markers required to mark a student, number of students a mark can mark, the time in which the entire marking session lasts as well as the duration that each student's project marking will last as parameters e.g. './demo 5 3 2 4 15 2'.
+
 Report 
 
 1. Solved because:
